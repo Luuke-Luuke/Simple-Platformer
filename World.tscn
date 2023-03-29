@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Block.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Player.gd" type="Script" id=3]
 
 [node name="World" type="Node2D"]
 
@@ -64,10 +63,10 @@ position = Vector2( 171, 144 )
 position = Vector2( 153, 126 )
 
 [node name="Block10" parent="." instance=ExtResource( 1 )]
-position = Vector2( 153, 108 )
+position = Vector2( 135, 126 )
 
 [node name="Block11" parent="." instance=ExtResource( 1 )]
-position = Vector2( 135, 90 )
+position = Vector2( 117, 108 )
 
 [node name="Block12" parent="." instance=ExtResource( 1 )]
 position = Vector2( 117, 90 )
@@ -77,4 +76,6 @@ position = Vector2( 99, 90 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 91, 68 )
-script = ExtResource( 3 )
+JUMP_FORCE = -160
+JUMP_RELEASE_FORCE = -40
+MAX_SPEED = 75
